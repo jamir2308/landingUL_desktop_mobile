@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/icon/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header_ppal">
+        <div class="logo-nav-container">
+            <img src="imagenes/logo.svg" alt="logo">
+            <nav class="" id="nav">
+                <!-- <ul class="nav">
+                    <li class="nav-item"><a class="navlink active" href="#">EPISODIOS</a></li>
+                    <li class="nav-item"><a class="navlink" href="#">NOSOTROS</a></li>
+                    <li class="nav-item"><a class="navlink" href="#">ENTREVISTA</a></li>
+                    <li class="nav-item"><a class="navlink disabled" href="#" tabindex="-1"
+                            aria-disabled="true">TOPICOS</a></li>
+                </ul> -->
+                <nav class="navbar navbar-expand-lg navbar-light">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav">
+                            <a class="nav-link active" href="#episodios">EPISODIOS</a>
+                            <a class="nav-link active" href="#section-nosotros">NOSOTROS</a>
+                            <a class="nav-link active" href="#entrevistas">ENTREVISTA</a>
+                            <a class="nav-link active" href="#topicos" tabindex="-1" aria-disabled="true">TOPICOS</a>
+                        </div>
+                    </div>
+                </nav>
+            </nav>
+        </div>
+    </header>
+    <div id="section-top">
+        <h1>Hello <s>world</s> pale blue dot</h1>
+        <p>El portal de podcasts que explora el mundo de la programacion y <br>
+            la tecnologia. Nuevos episodios, todos los jueves cada 15 dias.
+        </p>
+        <div>
+            <button type="button">
+                CONOCE MÁS
+            </button>
+        </div>
+    </div>
+    <div id="episodios">
+        <div id="header">
+            <!-- <P>Episodios</P> -->
+        </div>
+        <p id="title">Episodios</p>
+        <div id="reproductor1" class="reproductor ">
+            <div class="imagen-reproductor">
+                <img src="imagenes/js-party-original.png" alt="">
+            </div>
+            <div class="icon-reproductor"><span class="icon-spotify">spotify</span></div>
+            <div class="texto-reproductor">
+                <p class="p1">It´s just javascript &#174;</p>
+                <p>JS party</p>
+                <button type="button" class="btn btn-outline-secondary">Seguir</button>
+            </div>
+            <div class="controles">
+                <a href="#"><span class="icon-ccw"></span></i></a>
+                <div class="progress"></div>
+                <a href="#"><span class="icon-cw"></span></a>
+                <p class="dur">0:00</p>
+                <a href="#"><span class="icon-play-circle "></span></i></a>
+
+                <audio src="sonidos/certificaciones_java_se.mp3"></audio>
+            </div>
+        </div>
+        <div id="reproductor2" class="reproductor ">
+            <div class="imagen-reproductor">
+                <img src="imagenes/SyntaxFmLogo.png" alt="">
+            </div>
+            <div class="icon-reproductor"><span class="icon-spotify">spotify</span></div>
+            <div class="texto-reproductor">
+                <p class="p1">The fundamentals: HTML + CSS</p>
+                <p>syntax- Tasty Web Development Treats</p>
+                <button type="button" class="btn btn-outline-secondary">Seguir</button>
+            </div>
+            <div class="controles">
+                <a href="#"><span class="icon-ccw"></span></i></a>
+                <div class="progress"></div>
+                <a href="#"><span class="icon-cw"></span></a>
+                <p class="dur">0:00</p>
+                <a href="#"><span class="icon-play-circle"></span></i></a>
+                <audio src="sonidos/certificaciones_java_se.mp3"></audio>
+            </div>
+        </div>
+        <div id="reproductor3" class="reproductor ">
+            <div class="imagen-reproductor">
+                <img src="imagenes/reword.jpg" alt="">
+            </div>
+            <div class="icon-reproductor"><span class="icon-spotify">spotify</span></div>
+            <div class="texto-reproductor">
+                <p class="p1">The Open Office</p>
+                <p>Rework</p>
+                <button type="button" class="btn btn-outline-secondary">Seguir</button>
+            </div>
+            <div class="controles">
+                <a href="#"><span class="icon-ccw"></span></i></a>
+                <div class="progress"></div>
+                <a href="#"><span class="icon-cw"></span></a>
+                <p class="dur">0:00</p>
+                <a href="#"><span class="icon-play-circle"></span></i></a>
+                <audio src="sonidos/certificaciones_java_se.mp3"></audio>
+            </div>
+        </div>
+        <div id="reproductor4" class="reproductor ">
+            <div class="imagen-reproductor">
+                <img src="imagenes/rubyonrails.jpg" alt="">
+            </div>
+            <div class="icon-reproductor"><span class="icon-spotify">spotify</span></div>
+            <div class="texto-reproductor">
+                <p class="p1">227:Caching GraphQL with Michael Kelly</p>
+                <p>ruby on Rails podcast</p>
+                <button type="button" class="btn btn-outline-secondary">Seguir</button>
+            </div>
+            <div class="controles">
+                <a href="#"><span class="icon-ccw"></span></i></a>
+                <div class="progress"></div>
+                <a href="#"><span class="icon-cw"></span></a>
+                <p class="dur">0:00</p>
+                <a href="#"><span class="icon-play-circle"></span></i></a>
+                <audio src="sonidos/certificaciones_java_se.mp3"></audio>
+            </div>
+        </div>
+
+
+
+
+
+    </div>
+    <div id="section-nosotros">
+        <div id="sec-nosotro-img">
+            <img src="imagenes/phone.png" alt="">
+        </div>
+        <div id="sec-nosotros-texto">
+            <div>
+                <h3>De donde venimos</h3>
+                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in
+                    the
+                    Universe, are
+                    challenged by this point of pale light.
+                    Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this
+                    vastness, there is no
+                    hint that help will come from elsewhere to save us from ourselves.</p>
+            </div>
+        </div>
+    </div>
+    <div id="entrevistas">
+        <header>Invitadas/os estelares</header>
+        <div id="container-entrevistas">
+            <div> <img src="imagenes/uno.png" alt=""></div>
+            <div><img src="imagenes/dos.png" alt=""></div>
+            <div><img src="imagenes/tres.png" alt=""></div>
+            <div><img src="imagenes/cuatro.png" alt=""></div>
+            <div><img src="imagenes/cinco.png" alt=""></div>
+            <div><img src="imagenes/seis.png" alt=""></div>
+        </div>
+    </div>
+    <div id="topicos">
+        <div id="header-topicos">
+            <p>Algunos de nuestros temas</p>
+        </div>
+        <div id="container-topicos">
+            <div><img src="imagenes/icon1.svg" alt="">
+                <p>Trabajo remoto</p>
+            </div>
+            <div><img src="imagenes/icon2.svg" alt="">
+                <p>Repensando la programacion</p>
+            </div>
+            <div><img src="imagenes/icon3.svg" alt="">
+                <p>Bases del codigo</p>
+            </div>
+            <div><img src="imagenes/icon4.svg" alt="">
+                <p>Seguridad informatica</p>
+            </div>
+        </div>
+    </div>
+    <div id="novedades">
+        <div>
+            <p>
+                ¿Queres las ultimas novedades?
+            </p>
+        </div>
+        <div>
+            <a href="#"><button type="button">
+                    ESCUCHA LOS EPISODIOS
+                </button></a>
+        </div>
+    </div>
+    <footer id="footer">
+        <div id="marca-footer">
+            <p>&#174; 2019- Hello blue pale dot</p>
+        </div>
+        <div id="redes-sociales">
+            <a href="#"><span class="icon-spotify"></span></a>
+            <a href="#"><span class="icon-instagram"></span></a>
+            <a href="#"><span class="icon-twitter"></span></a>
+            <a href="#"><span class="icon-facebook-square"></span></a>
+            <a href="#"><span class="icon-telegram"></span></a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,331 @@
+body {
+  background-color: white;
+}
+
+#header_ppal {
+  position: fixed;
+  font-family: IBMPlexMono;
+  width: 100%;
+  height: 60px;
+  top: 0px;
+  left: 0px;
+  background-color: #ffffff;
+  z-index: 10;
+}
+.navbar {
+  color: #060a24;
+  margin-right: 15px;
+  font-size: 16px;
+}
+#header img {
+  cursor: pointer;
+  size: 36pt;
+}
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 20px;
+}
+@media (max-width: 400px) {
+  #header-ppal {
+    width: 553px;
+  }
+}
+
+#section-top {
+  margin: 120px 10% 2px 10%;
+}
+#section-top h1 {
+  font-family: IBMPlexSans;
+  color: #060a24;
+  font-size: 54px;
+  letter-spacing: 0;
+  margin: 0px;
+}
+#section-top p {
+  font-family: IBMPlexMono;
+  font-size: 16px;
+  color: #060a24;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: 10px;
+}
+#section-top button {
+  width: 180pt;
+  height: 60px;
+  padding: 1.4%;
+  background-color: #00f3bb;
+  border-style: none;
+  border-radius: 2px;
+  cursor: pointer;
+  margin-top: 50px;
+}
+@media (min-width: 366px) {
+  #section-top {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+  #section-top p {
+    font-size: 16px;
+    color: #060a24;
+    letter-spacing: 0;
+    line-height: 24px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+#episodios {
+  /* background-color: darkblue; */
+  display: grid;
+  clip-path: polygon(0 15%, 100% 0, 100% 85%, 0 100%);
+  gap: 20px;
+  width: 100%;
+  background-image: linear-gradient(#0000ff, #0000a3);
+  z-index: -1;
+  height: 1000px;
+  grid-template-areas:
+    "header header"
+    "title title"
+    "reproductor1 reproductor2"
+    "reproductor3 reproductor4";
+  justify-content: center;
+}
+
+.reproductor {
+  display: grid;
+  width: 550px;
+  height: 232px;
+  border-radius: 3px;
+  grid-template-areas:
+    "imagen-reproductor icon-reproductor"
+    "imagen-reproductor texto-reproductor"
+    "imagen-reproductor controles";
+  font-family: inherit;
+  color: white;
+  /* top: 45%;
+  left: 44%; */
+  margin-left: 10%;
+  margin-top: 5px;
+  transform: translate(0, -70px);
+  justify-content: left;
+}
+.navbar {
+  align-items: center;
+}
+#header {
+  grid-area: header;
+  color: #ffffff;
+  font-size: 48px;
+  font-family: IBMPlexSans;
+  width: 100%;
+}
+#title {
+  top: 0px;
+  margin-top: 0px;
+  grid-area: title;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 48px;
+  font-family: IBMPlexSans;
+  line-height: 4px;
+}
+.imagen-reproductor {
+  padding: 10px;
+}
+.imagen-reproductor img {
+  width: 200px;
+}
+#reproductor1 {
+  grid-area: reproductor1;
+  background-color: rgb(32, 41, 56);
+}
+#reproductor2 {
+  grid-area: reproductor2;
+  background-color: rgb(107, 79, 8);
+}
+#reproductor3 {
+  grid-area: reproductor3;
+  background-color: rgb(38, 40, 43);
+}
+#reproductor4 {
+  grid-area: reproductor4;
+  background-color: rgb(82, 22, 40);
+}
+.imagen-reproductor {
+  grid-area: imagen-reproductor;
+}
+.icon-reproductor {
+  grid-area: icon-reproductor;
+  text-align: right;
+  justify-content: right;
+  margin-right: 10px;
+  width: 320px;
+}
+.texto-reproductor {
+  grid-area: texto-reproductor;
+}
+.texto-reproductor .p1 {
+  font-size: 22px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 20px;
+}
+.texto-reproductor button {
+  margin-top: 15px;
+}
+.controles {
+  grid-area: controles;
+  display: grid;
+  grid-template-columns: 9% 58% 9% 9% 18%;
+  width: 100%;
+  align-items: center;
+  margin: 0px;
+  gap: 1px;
+  text-align: left;
+  position: relative;
+}
+.controles p {
+  font-size: 12px;
+  text-align: initial;
+}
+.progress {
+  height: 3px;
+  margin-left: 0px;
+}
+.icon-play-circle {
+  width: 25px;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 13px;
+}
+@media (max-width: 553px) {
+  #episodios {
+    width: 553px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+#section-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: -120px;
+  position: relative;
+  z-index: 1;
+}
+#sec-nosotros-img img {
+  height: 660px;
+  width: 457.6px;
+}
+#sec-nosotros-texto {
+  display: flex;
+  text-align: justify;
+  align-items: center;
+}
+#sec-nosotros-texto h3 {
+  display: block;
+  color: #060a24;
+  font-size: 48px;
+}
+#sec-nosotros-texto p {
+  font-family: IBMPlexMono;
+}
+#entrevistas {
+  display: grid;
+  margin: 0px;
+}
+#entrevistas header {
+  width: 100%;
+  display: block;
+  font-family: #060a24;
+  font-size: 48px;
+  padding-left: 130px;
+  padding-bottom: 20px;
+}
+#container-entrevistas {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#entrevistas img {
+  width: 480px;
+  height: 364px;
+}
+
+#header-topicos {
+  color: #060a24;
+  font-size: 38px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  width: 100%;
+  padding-left: 100px;
+}
+#container-topicos {
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  font-family: IBMPlexSans-SemiBold;
+  text-align: center;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  gap: 50px;
+}
+#container-topicos img {
+  display: flex;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+#novedades {
+  clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+  background-image: linear-gradient(#0000ff, #0000a3);
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#novedades p {
+  display: block;
+  font-family: IBMPlexSans;
+  color: white;
+  font-size: 40px;
+}
+#novedades a {
+  text-decoration: none;
+}
+#novedades button {
+  display: block;
+  width: 180pt;
+  height: 60px;
+  padding: 1.4%;
+  background-color: #00f3bb;
+  border-style: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+#footer {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+}
+#marca-footer {
+  margin-top: 10px;
+}
+
+#redes-sociales a {
+  margin-right: 20px;
+}
